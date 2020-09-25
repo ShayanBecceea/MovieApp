@@ -1,0 +1,44 @@
+.component {
+    padding: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #770714;
+
+    h1{
+        margin-bottom: 45px;
+      }
+
+    .chips {
+        display: flex;
+    }
+
+    .movie_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+  .new_and_popular_container {
+    position: absolute;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #031d33;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    right:1%;
+    border:3px solid #031d33;
+    background-color: #031d33;
+    border-radius: 5px;
+    color: white;
+
+    .api_movies{
+        padding:13px 6px 0px 6px;
+        display: inline;
+        font-family: "Maax";
+
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="container">
+  <!-- search bar -->
+    <app-header (searchMovieTitle)="searchValue($event)"></app-header>
+
+    <div class="movies">
+       <!-- sidebar -->
+        <app-sidebar (categoryEvent)="setCategories($event)" [movieGenres]="movieGenres"></app-sidebar>
+
+        <!-- content -->
+        <app-content [title]="categories" [moviesDisplayed]="moviesListDisplayed" (selectedFromApi)="getMoviesFromApi($event)" ></app-content>
+    </div>
+
+</div>
+

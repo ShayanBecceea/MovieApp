@@ -1,0 +1,16 @@
+.rating_button {
+    background-color: black;
+    min-width: 56px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    font-weight: 700;
+    cursor: pointer;
+
+      &.selected {
+          background-color: #7a0404;
+      }
+  }
+

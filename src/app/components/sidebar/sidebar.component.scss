@@ -1,0 +1,28 @@
+.sidebar {
+    background-color: #031d33;
+    height: 100%;
+    width: 230px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    line-height: 36pt;
+    text-indent: 1em;
+
+
+    .list {
+      color: white;
+      display: block;
+      padding: 10px;
+      letter-spacing: 2px;
+
+      &.selected {
+        background-color: #5d5bda1f;
+        color: red;
+
+      }
+    }
+
+    .list:hover{
+        cursor: pointer;
+        background-color: #00ff621f;
+    }
+  }

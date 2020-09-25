@@ -1,0 +1,32 @@
+<!-- search bar -->
+<div class="header">
+  <app-header [showSearch] = "false"></app-header>
+
+<!-- sidebar -->
+<div class="sidebar">
+
+  <app-sidebar (categoryEvent)="selectedGenre($event)" [movieGenres]="genreList"></app-sidebar>
+
+    <div class="top_content">
+      <div class="poster"><img src="{{movieDetails?.posterUrl}}"></div>
+
+        <div class="content_details">
+          <h1 class="title">{{ movieDetails?.title}}</h1>
+          <p class="overview">{{ movieDetails?.overview }}</p>
+
+          <div class="movie_details">
+           <div class="details">
+            <span class="information">Rating</span>
+            <span class="details-content">{{ movieDetails?.rating }}</span>
+            <span class="information">Genre</span>
+            <span class="details-content">{{ movieDetails?.genreStr }}</span>
+            <span class="information">Release Date</span>
+            <span class="details-content">{{ movieDetails?.releaseDate }}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+

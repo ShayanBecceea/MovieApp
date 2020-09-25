@@ -1,0 +1,32 @@
+.container {
+    float: left;
+    height: 60px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .search_movies {
+      background: url(".//..//..//..//assets/pictures/search.svg") no-repeat center center;
+      background-size: 27px;
+      background-position-x: 154px;
+      height: 40px;
+      margin-left: 55px;
+      background-color: #eee7e9;
+      font-size: 1.1rem;
+      letter-spacing: .03rem;
+      text-indent: 1em;
+      border: 3px solid black;
+      border-radius: 25px;
+      outline:none;
+      cursor: pointer;
+      font-family: "Maax";
+
+    }
+
+    ::placeholder {
+        color: black;
+    }
+
+  }

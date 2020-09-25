@@ -1,0 +1,17 @@
+<div class="container">
+  <!-- class for movie frames -->
+  <div class="movie-frame">
+    <img src = {{moviePicUrl}} routerLink="/movie/{{movieId}}"/>
+     <!-- class for rating -->
+    <div class="rating_container">
+      <span class="rating">{{ movieRating }}</span>
+    </div>
+  </div>
+  <!-- class for movie details -->
+  <div class="movie_details_container">
+    <div class="title" routerLink="/movie/{{movieId}}">{{ movieTitle }}
+    </div>
+    <div class="genre">{{ movieGenre }}
+    </div>
+  </div>
+</div>

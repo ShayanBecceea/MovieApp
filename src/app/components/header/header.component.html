@@ -1,0 +1,21 @@
+<div class="header">
+  <!-- title of website -->
+    <div class="website_name"><span>FLIXTOR MOVIES</span>
+    </div>
+
+     <!-- search bar -->
+    <app-searchbar *ngIf="showSearch" (searchMovieTitle)="searchMovie($event)"></app-searchbar>
+
+    <!-- settings dropdown -->
+    <div class="settings_options" (click)="DropdownToggle()">
+      <i class="material-icons settings_button">call_to_action</i>
+      <div class="content" [class.selected]="dropdown">
+        <!-- dropdown content -->
+        <h3>Shayan Becceea</h3>
+        <hr class = "hr_line">
+        <h3>Translation</h3>
+        <div class="signout" (click)="Logout()"><h3>Sign out</h3>
+				</div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+.container {
+    background-color: rgb(220,224,230);
+    overflow-x: hidden;
+
+    .movies {
+        display: flex;
+        min-height: 100.0vh;
+    }
+}

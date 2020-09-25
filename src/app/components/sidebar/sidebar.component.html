@@ -1,0 +1,3 @@
+<div class="sidebar">
+    <a *ngFor="let genre of movieGenres" class="list" (click)="onSelected(genre)" [class.selected]="nameSelected === genre">{{ genre }} </a>
+  </div>

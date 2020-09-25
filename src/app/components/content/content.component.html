@@ -1,0 +1,24 @@
+<div class="component">
+     <!-- display current page -->
+    <h1>{{ title }}</h1>
+
+    <!-- chips for movie rating -->
+    <div class="chips">
+        <app-chip text="All" (click)="sortMovies('all')" [selected]="ratingBy === 'all'"></app-chip>
+        <app-chip text="0 - 5 ⭐" (click)="sortMovies('5 rating')" [selected]="ratingBy === '5 rating'"></app-chip>
+        <app-chip text="5 - 8 ⭐" (click)="sortMovies('5+ rating')" [selected]="ratingBy === '5+ rating'"></app-chip>
+    </div>
+
+    <!-- new and popular movies using movies API -->
+    <div class="new_and_popular_container">
+        <div class="api_movies" (click)="getMoviesContent('upcoming')"><span>Upcoming 🎞</span></div>
+        <div class="api_movies" (click)="getMoviesContent('popular')"><span>Popular 🎞</span></div>
+    </div>
+
+    <!-- display movies -->
+    <div class="movie_container">
+        <app-card *ngFor="let item of moviesDisplayed"
+        [movieId]="item.id" [movieTitle]="item.title" [movieRating]="item.rating"  [movieGenre]="item.genreTotal" [moviePicUrl]="item.posterUrl">
+        </app-card>
+    </div>
+</div>

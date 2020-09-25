@@ -1,0 +1,145 @@
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  background-image: url("../../../assets/pictures/login_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+	width: 1000px;
+	background: rgb(218, 215, 215);
+	overflow: hidden;
+	position: relative;
+	height: 550px;
+	margin: auto;
+  padding: 60px;
+
+}
+
+h2 {
+	font-size: 22px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+	display: inline-block;
+	font-weight: 700;
+  font-family: "Maax";
+  cursor: pointer;
+}
+
+.cover img {
+	position: absolute;
+	right: 0px;
+	width: 27%;
+	top: 0px;
+	height: 100%;
+  opacity: 0.9;
+  cursor: pointer;
+
+}
+
+.form-group {
+	font-family: "Maax";
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.form-control {
+	border: none;
+	width: 50%;
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+	height: 15px;
+	border-radius: 20px;
+	background: rgb(151, 157, 160);
+	border: 2px solid rgba(255, 255, 255, 0);
+	overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+	&:focus {
+		outline: 0;
+		border: 2px solid rgba(173, 12, 12, 0.5);
+		border-radius: 20px;
+		background: rgba(0, 0, 0, 0);
+
+		+ span {
+			opacity: 0.6;
+		}
+	}
+}
+
+.eye-icon {
+	position: absolute;
+	margin-left: 100px;
+	margin-top: -97px;
+	cursor: pointer;
+}
+
+.btn {
+	background-color: #989fac;
+	width: 24%;
+	height: 39px;
+	margin-top: 100px;
+	transition: all 0.5s ease-in-out;
+	border: 0 none;
+  text-transform: uppercase;
+  font-family: "Maax";
+
+	&:hover {
+		background: #6c88a0;
+		transition: all 0.5s;
+		cursor: pointer;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.custom-checkbox {
+	-webkit-appearance: none;
+	background-color: rgba(71, 5, 5, 0.24);
+	padding: 8px;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+  top: 6px;
+  cursor: pointer;
+
+	&:checked {
+		background-color:  rgba(173, 12, 12, 0.5);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+label {
+	display: inline-block;
+	padding-top: 30px;
+	padding-left: 5px;
+	font-family: "Maax";
+}
+
+.text-block {
+	position: absolute;
+	transform: translate(20%, 0%);
+	right: 10%;
+	top: 40%;
+	background: rgba(0, 0, 0, 0.9);
+	color: #f1f1f1;
+	font-size: 21px;
+  font-weight: 700;
+  padding: 2px;
+  cursor: pointer;
+}
