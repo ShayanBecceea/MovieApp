@@ -25,8 +25,8 @@
 
     "Welcome Back":"Welcome Back",
     "Email Address":"Email Address",
-    "Email address is required":"Languages",
-    "Email address is not valid":"Languages",
+    "Email address is required":"Email address is required",
+    "Email address is not valid":"Email address is not valid",
     "Password":"Password",
     "Password is required":"Password is required",
     "Password must be at least 6 characters":"Password must be at least 6 characters",

@@ -45,14 +45,18 @@ export class MoviesComponent implements OnInit {
 
       this.movieGenres = [...new Set(this.movieList.map(item => item.genre).join().split(","))];
       this.setCategories(this.movieGenres[0]);
-      /*this.displayCategories();*/
+      this.displayCategories();
     });
   }
 
   // go back to categories when clicking movie details
   displayCategories(): void {
     this.route.queryParamMap.subscribe(params => {
-      this.setCategories(params.get("genre"));
+
+        if (params.get("action") === "side" && params.has("genre")) {
+          this.setCategories(params.get("genre"));
+        }
+
     });
   }
 

@@ -55,8 +55,8 @@ export class LoginComponent implements OnInit {
       });
     }
 
-    switchLanguage(language:string) {
-      this.translate.use(language);
+    switchLanguage(language:string):void {
+      this.translate.setDefaultLang(language);
     }
   }
 

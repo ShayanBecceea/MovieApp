@@ -47,7 +47,7 @@ export class MovieDetailsComponent implements OnInit {
   //sidebar categories click event
   selectedGenre(genreClicked: string): void {
     this.router.navigate(['/movie'],
-    {queryParams: {genre:genreClicked}});
+    {queryParams: {action:'side', genre:genreClicked}});
   }
 
 }
