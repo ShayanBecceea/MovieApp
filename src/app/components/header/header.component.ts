@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,13 @@ export class HeaderComponent implements OnInit {
 
   @Input('showSearch') showSearch: boolean = true;
 
-  constructor(private router:Router) {}
+  constructor(private router:Router, public translate: TranslateService ) {
+    translate.setDefaultLang('en');
+  }
+
+  switchLanguage(language:string) {
+    this.translate.use(language);
+  }
 
   ngOnInit(): void {
   }
@@ -34,7 +41,8 @@ export class HeaderComponent implements OnInit {
   }
 
   Logout(){
-    this.router.navigate(["/"])
+    this.router.navigate(["/"]);
+    localStorage.clear();
   }
 
 }

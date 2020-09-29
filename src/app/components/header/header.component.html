@@ -13,8 +13,12 @@
         <!-- dropdown content -->
         <h3>Shayan Becceea</h3>
         <hr class = "hr_line">
-        <h3>Translation</h3>
-        <div class="signout" (click)="Logout()"><h3>Sign out</h3>
+        <div>
+        <h3>{{'Languages' | translate}}</h3>
+        <button class = "translation_en" (click)="switchLanguage('en')"></button>
+        <button class = "translation_fr" (click)="switchLanguage('fr')"></button>
+        <div class="signout" (click)="Logout()"><h3>{{'Sign out' | translate }}</h3>
+        </div>
 				</div>
       </div>
     </div>

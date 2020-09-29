@@ -31,7 +31,7 @@ export class MoviesComponent implements OnInit {
     this.moviesListDisplayed = this.getByTitle(value);
   }
 
-  // get movies list and push into movie
+  // get movies list from json file and push into movie
   getMoviesList(): void {
     this._movieService.getMovies().subscribe((data: any[]) => {
       data.forEach(item => {
@@ -45,10 +45,18 @@ export class MoviesComponent implements OnInit {
 
       this.movieGenres = [...new Set(this.movieList.map(item => item.genre).join().split(","))];
       this.setCategories(this.movieGenres[0]);
+      /*this.displayCategories();*/
     });
   }
 
-  // seperate genre
+  // go back to categories when clicking movie details
+  displayCategories(): void {
+    this.route.queryParamMap.subscribe(params => {
+      this.setCategories(params.get("genre"));
+    });
+  }
+
+  // seperate genre in json file
   getByGenre (genre: string): Movie[] {
     var movies: Movie[] = [];
     this.movieList.forEach(item => {
@@ -66,6 +74,7 @@ export class MoviesComponent implements OnInit {
       return movies;
   }
 
+  // movies from popular and upcoming api
   getMoviesFromApi(value: string): void {
     if (value === "upcoming") {
       this._movieService.fetchPopularMovies().subscribe(() => {

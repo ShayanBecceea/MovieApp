@@ -11,16 +11,17 @@
       <div class="poster"><img src="{{movieDetails?.posterUrl}}"></div>
 
         <div class="content_details">
+          <span class="movie_title">{{'Title' | translate}}</span>
           <h1 class="title">{{ movieDetails?.title}}</h1>
-          <p class="overview">{{ movieDetails?.overview }}</p>
+          <p class="overview">{{ movieDetails?.overview | translate}}</p>
 
           <div class="movie_details">
            <div class="details">
-            <span class="information">Rating</span>
+            <span class="information">{{'Rating' | translate}}</span>
             <span class="details-content">{{ movieDetails?.rating }}</span>
-            <span class="information">Genre</span>
+            <span class="information">Genres</span>
             <span class="details-content">{{ movieDetails?.genreStr }}</span>
-            <span class="information">Release Date</span>
+            <span class="information">{{'Release Date' | translate}}</span>
             <span class="details-content">{{ movieDetails?.releaseDate }}</span>
           </div>
         </div>
