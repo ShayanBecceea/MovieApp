@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
       this.AuthServiceService.login(this.controls.email.value, this.controls.password.value)
       .pipe()
       .subscribe(data => {
-        this.router.navigate(['/']);
+        this.router.navigate(['/movie']);
       });
     }
 
