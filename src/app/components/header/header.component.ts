@@ -16,12 +16,10 @@ export class HeaderComponent implements OnInit {
 
   @Input('showSearch') showSearch: boolean = true;
 
-  constructor(private router:Router, public translate: TranslateService ) {
-    translate.setDefaultLang('en');
-  }
+  constructor(private router:Router, public translate: TranslateService ) {}
 
   switchLanguage(language:string) {
-    this.translate.use(language);
+    this.translate.setDefaultLang(language);
   }
 
   ngOnInit(): void {

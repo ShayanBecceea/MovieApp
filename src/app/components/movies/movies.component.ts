@@ -52,11 +52,9 @@ export class MoviesComponent implements OnInit {
   // go back to categories when clicking movie details
   displayCategories(): void {
     this.route.queryParamMap.subscribe(params => {
-
-        if (params.get("action") === "side" && params.has("genre")) {
+        if (params.has("genre")) {
           this.setCategories(params.get("genre"));
         }
-
     });
   }
 
