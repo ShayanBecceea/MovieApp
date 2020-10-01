@@ -35,6 +35,7 @@ export class Movie {
 
      get genre(): string[] {
         return this._genre;
+
     }
 
      set genre(genre: string[]) {

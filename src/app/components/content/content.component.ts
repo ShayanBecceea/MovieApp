@@ -10,6 +10,8 @@ import {Movie} from '../../dto/movie';
 
 export class ContentComponent implements OnInit {
 
+  myDate = Date.now();
+
   @Input() title: string;
   @Input() moviesDisplayed: Movie[] = [];
   @Output() selectedFromApi = new EventEmitter<string>();

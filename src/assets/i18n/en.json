@@ -1,19 +1,28 @@
 
   {
-    "Upcoming": "Upcoming 🎞",
-    "Popular": "Popular 🎞",
+    "Upcoming": "Upcoming",
+    "Popular": "Popular",
     "Search": "Search",
 
     "Drama": "Drama",
+    "Action":"Action",
+    "Crime":"Crime",
     "Biography": "Biography",
     "History": "History",
     "Adventure": "Adventure",
     "Sci-Fi": "Sci-Fi",
+    "Thriller": "Thriller",
     "Fantasy": "Fantasy",
+    "Animation": "Animation",
+    "Romance": "Romance",
+    "Music": "Music",
+    "Western": "Western",
     "Mystery": "Mystery",
+    "Musical": "Musical",
     "Family": "Family",
     "Comedy": "Comedy",
     "War": "War",
+    "Sport": "Sport",
     "Horror": "Horror",
 
     "Sign out": "Sign out",
@@ -22,6 +31,7 @@
     "Release Date": "Release Date",
     "Title": "Title",
     "Languages":"Languages",
+    "Genres":"Genres",
 
     "Welcome Back":"Welcome Back",
     "Email Address":"Email Address",

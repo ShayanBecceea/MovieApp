@@ -147,17 +147,12 @@ label {
 .translation_en{
   position: absolute;
   top: 81px;
-  right: 110px;
+  right: 105px;
   height: 25px;
   width: 25px;
-  border: none;
-  background: url(".//..//..//..//assets/pictures/Flag_of_United_Kingdom_-_Circle-512.png") no-repeat center center;
+  background: url(".//..//..//..//assets/pictures/Flag\ of\ United\ Kingdom.png") no-repeat center center;
   background-size: 20px;
   background-position-x: 0px;
-
-  &:focus{
-    outline: none;
-  }
 
 }
 
@@ -167,12 +162,23 @@ label {
   right: 80px;
   height: 25px;
   width: 25px;
-  border: none;
   background: url(".//..//..//..//assets/pictures/flag\ of\ france.png") no-repeat center center;
   background-size: 20px;
   background-position-x: 5px;
 
-  &:focus{
-    outline: none;
-  }
 }
+
+.translation_sp{
+  position: absolute;
+  top: 81px;
+  right:50px;
+  height: 25px;
+  width: 25px;
+  background: url(".//..//..//..//assets/pictures/spain_spanish_national_country_flag-512.png") no-repeat center center;
+  background-size: 20px;
+  background-position-x: 5px;
+
+}
+
+
+

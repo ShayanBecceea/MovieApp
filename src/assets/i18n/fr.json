@@ -1,6 +1,6 @@
 {
-    "Upcoming": "A venir 🎞",
-    "Popular": "Populaire 🎞",
+    "Upcoming": "A venir",
+    "Popular": "Populaire",
     "Search": "Chercher",
 
     "Drama": "Drame",
@@ -8,9 +8,13 @@
     "History": "Histoire",
     "Adventure": "Aventure",
     "Sci-Fi": "Science-fiction",
-    "Fantasy": "Fantastique",
+    "Thriller": "Thriller",
+    "Fantasy": "Fantaisie",
+    "Music": "Musique",
+    "Western": "Occidentale",
     "Mystery": "Mystère",
-    "Family": "Familial",
+    "Musical": "Musicale",
+    "Family": "Famille",
     "Comedy": "Comédie",
     "War": "Guerre",
     "Horror": "Horreur",
@@ -21,6 +25,7 @@
     "Release Date": "Date de sortie",
     "Title": "Nom du film",
     "Languages":"Langues ",
+    "Genres":"Genres",
 
     "Welcome Back":"Bienvenue",
     "Email Address":"Email",

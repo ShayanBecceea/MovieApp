@@ -1,0 +1,49 @@
+
+  {
+    "Upcoming": "Próxima",
+    "Popular": "Populare",
+    "Search": "Buscar",
+
+    "Action":"Acción",
+    "Crime":"Crimen",
+    "Biography": "Biografía",
+    "History": "Historia",
+    "Adventure": "Aventuras",
+    "Sci-Fi": "Ciencia ficción",
+    "Thriller": "Suspenso",
+    "Fantasy": "Fantasía",
+    "Animation": "Animación",
+    "Romance": "Romance",
+    "Music": "Música",
+    "Western": "Occidental",
+    "Mystery": "Misterio",
+    "Family": "Familia",
+    "Comedy": "Comedia",
+    "War": "Guerra",
+    "Sport": "Deporte",
+
+    "Sign out": "Desconectar",
+    "All": "Todos",
+    "Rating": "Clasificación",
+    "Release Date": "Fecha de lanzamiento",
+    "Title": "Título",
+    "Languages":"Idiomas",
+    "Genres":"Géneros",
+
+    "Welcome Back":"Bienvenida de nuevo",
+    "Email Address":"Dirección de correo electrónico",
+    "Email address is required":"Se requiere Dirección de correo electrónico",
+    "Email address is not valid":"La dirección de correo electrónico no es válida",
+    "Password":"Contraseña",
+    "Password is required":"Se requiere contraseña",
+    "Password must be at least 6 characters":"La contraseña debe tener al menos 6 caracteres",
+    "Stay Signed in":"Permanecer conectado",
+    "Sign In":"Registrarse",
+
+
+    "A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals.":"Un ladrón profesional con una deuda de 40 millones de dólares y la vida de su familia en juego debe cometer un atraco final: robar un casino futurista lleno de los criminales más peligrosos del mundo.",
+
+    "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.":"El trabajo del multimillonario director ejecutivo de tecnología Donovan Chalmers es tan valioso que contrata mercenarios para protegerlo, y un grupo terrorista secuestra a su hija solo para conseguirlo."
+
+}
+
