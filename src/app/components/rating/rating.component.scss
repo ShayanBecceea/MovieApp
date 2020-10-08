@@ -1,0 +1,85 @@
+.content {
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  cursor: pointer;
+
+  .stars{
+    position: relative;
+    left: -45px;
+  }
+
+	.movie_id {
+		color: white;
+		position: absolute;
+		font-family: "Maax";
+		top: 365px;
+		width: 205px;
+		text-align: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.ratings {
+		position: absolute;
+		margin-top: 176px;
+		margin-right: 165px;
+		outline: none;
+		cursor: pointer;
+		height: 20px;
+		width: 243px;
+		font-family: "Maax";
+		background-color: rgb(220, 224, 230);
+		color: #031d33;
+		font-size: 18px;
+		padding: 3px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	::placeholder {
+		color: #031d33;
+		font-family: "Maax";
+		font-size: 16px;
+	}
+
+	.rating_chosen {
+		margin-left: -25px;
+    font-size: 20px;
+    width: 10px;
+		text-align: center;
+		color: gold;
+    font-family: "Maax";
+	}
+}
+
+.submit_rating {
+	width: 100%;
+
+	.btn {
+		float: right;
+		background-color: #7a0404;
+		border: none;
+		color: white;
+		font-family: "Maax";
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 18px;
+		border-radius: 4px;
+		cursor: pointer;
+		outline: none;
+		letter-spacing: 1px;
+		margin-top: 89px;
+	}
+
+	.message {
+		display: flex;
+		float: right;
+		color: white;
+		font-family: "Maax";
+		font-size: 18px;
+		margin-right: 25px;
+		margin-top: 110px;
+	}
+}

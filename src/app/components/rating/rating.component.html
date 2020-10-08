@@ -1,0 +1,18 @@
+<div class="content">
+  <div class = "movie_id"> {{'Movie ID' | translate}}: {{movieId}}</div>
+  <!-- either use stars or input box -->
+  <ngx-stars class="stars"  [color]="'dodgerblue'" [readonly]="submitted" [maxStars]="10" [size]="2" (ratingOutput)="setUserRating($event)"></ngx-stars>
+  <input type="number" class="ratings" [readonly]="submitted" [(ngModel)]= "rating" step="0.5" max="10" placeholder="{{'Rate by star or input' | translate}}">
+
+  <div class="rating_chosen">
+    <span>{{ rating }}⭐</span>
+  </div>
+</div>
+<div class="submit_rating">
+  <div class="submit" >
+    <button class="btn" (click)="submit(rating)">{{'Submit' | translate}}</button>
+  </div>
+  <div class="message" *ngIf="submitted">
+    <div>{{'Successfully rated movie' | translate}}</div>
+  </div>
+</div>

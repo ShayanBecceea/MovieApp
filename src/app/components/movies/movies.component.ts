@@ -79,13 +79,13 @@ export class MoviesComponent implements OnInit {
   // movies from popular and upcoming api
   getMoviesFromApi(value: string): void {
     if (value === "upcoming") {
-      this._movieService.fetchPopularMovies().subscribe(() => {
+      this._movieService.fetchUpcomingMovies().subscribe(() => {
         this.categories = "Upcoming";
         this.moviesListDisplayed = this._movieService.movieList;;
       });
     }
     else if (value === "popular") {
-      this._movieService.fetchUpcomingMovies().subscribe(() => {
+      this._movieService.fetchPopularMovies().subscribe(() => {
         this.categories = "Popular";
         this.moviesListDisplayed = this._movieService.movieList;;
       });

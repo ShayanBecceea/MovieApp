@@ -21,6 +21,12 @@
     "@angular/router": "~10.0.11",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "angular-star-rating": "^4.0.0-beta.3",
+    "ng-image-fullscreen-view": "^1.0.3",
+    "ng-image-slider": "^2.6.4",
+    "ngx-bar-rating": "^2.0.0",
+    "ngx-star-rating": "0.0.1",
+    "ngx-stars": "^1.4.3",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

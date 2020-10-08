@@ -18,4 +18,9 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  displayrating: boolean = false;
+
+  getGallery(value) {
+    this.displayrating = !this.displayrating;
+  }
 }

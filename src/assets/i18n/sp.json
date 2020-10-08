@@ -40,10 +40,13 @@
     "Stay Signed in":"Permanecer conectado",
     "Sign In":"Registrarse",
 
+    "Rate Movie":"Calificar película",
+    "Rate by star or input":"Calificar por estrella o entrada",
+    "Movie ID":"ID de película",
+    "Submit":"Enviar",
+    "Successfully rated movie":"Calificación publicada con éxito",
 
-    "A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals.":"Un ladrón profesional con una deuda de 40 millones de dólares y la vida de su familia en juego debe cometer un atraco final: robar un casino futurista lleno de los criminales más peligrosos del mundo.",
-
-    "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.":"El trabajo del multimillonario director ejecutivo de tecnología Donovan Chalmers es tan valioso que contrata mercenarios para protegerlo, y un grupo terrorista secuestra a su hija solo para conseguirlo."
+    "Movie Images":"Imágenes de películas"
 
 }
 

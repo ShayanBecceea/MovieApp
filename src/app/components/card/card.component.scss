@@ -1,66 +1,64 @@
 .container {
+	margin: 110px;
+	width: 150px;
+	margin-left: 10px;
+	margin-top: 160px;
+	margin-bottom: -25px;
 
-    margin: 110px;
-    width: 150px;
-    margin-left: 10px;
-    margin-top: 160px;
-    margin-bottom: -25px;
+	.movie-frame {
+		position: relative;
+		text-align: center;
+		color: white;
 
-    .movie-frame {
-        position: relative;
-        text-align: center;
-        color: white;
+		img {
+			width: 207px;
+			height: 310px;
+			border-radius: 10px;
+			border: 3px solid rgb(75, 6, 26);
+			cursor: pointer;
+		}
 
-        img {
-            width: 207px;
-            height: 310px;
-            border-radius: 10px;
-            border:3px solid rgb(75, 6, 26);
-            cursor: pointer;
-        }
+		img:hover {
+			transform: scale(1.02);
+			transition-duration: 0.4s;
+		}
 
-        img:hover {
-          transform: scale(1.02);
-          transition-duration: 0.40s;
-        }
+		.rating_container {
+			width: 15%;
+			position: relative;
+			top: 27px;
+			right: -180px;
+			border-radius: 10px;
+			padding: 5px;
+			background: #770714;
+		}
+	}
 
-        .rating_container {
-            width: 15%;
-            position: relative;
-            top: 27px;
-            right: -180px;
-            border-radius: 10px;
-            padding:5px;
-            background:#770714;
+	.movie_details_container {
+		display: grid;
+		color: black;
+		line-height: 26pt;
 
-        }
-    }
+		.title {
+			width: 100%;
+			position: relative;
+			top: -410px;
+			right: -18px;
+			text-align: center;
+			font-weight: 700;
+			font-size: 14px;
+			cursor: pointer;
+			outline: none;
+			font-family: "Maax";
+		}
 
-    .movie_details_container {
-        display:grid;
-        color: black;
-        line-height: 26pt;
-
-        .title{
-          width: 100%;
-          position: relative;
-          top: -410px;
-          right: -18px;
-          text-align: center;
-          font-weight: 700;
-          font-size: 14px;
-          cursor: pointer;
-          outline: none;
-          font-family: "Maax";
-        }
-
-        .genre {
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.49px;
-            position: relative;
-            color: #770714;
-            top: -40px;
-        }
-      }
-  }
+		.genre {
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: 0.49px;
+			position: relative;
+			color: #770714;
+			top: -40px;
+		}
+	}
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd } from '@angular/router';
 import { MovieService } from '../../services/movie.service';
 import { MovieDetails } from  '../../dto/movie-details';
 import { Router } from '@angular/router';
@@ -11,15 +11,27 @@ import { Router } from '@angular/router';
 })
 export class MovieDetailsComponent implements OnInit {
 
-  movieDetails: MovieDetails;
+  myDate = new Date();
 
+  movieDetails: MovieDetails;
+  displayrating: boolean = false;
   genreList: string[];
+  currentIndex: any = -1;
+  showFlag: any = false;
+  image: Array<object>;
 
   constructor(private route: ActivatedRoute,private _movieService: MovieService,private router: Router) {}
 
   ngOnInit(): void {
     this.getMovieId();
     this.getGenresList();
+
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 
   //get movie id
@@ -35,6 +47,10 @@ export class MovieDetailsComponent implements OnInit {
     .subscribe((movieDetails: MovieDetails) => {
       this.movieDetails = movieDetails;
     });
+
+    this._movieService.getMovieGallery(movieId).subscribe((response) => {
+      this.image = response;
+    });
   }
 
   // get genre list
@@ -45,9 +61,16 @@ export class MovieDetailsComponent implements OnInit {
   }
 
   //sidebar categories click event
-  selectedGenre(genreClicked: string): void {
+  selectedGenre(genre: string): void {
     this.router.navigate(['/movie'],
-    {queryParams: {action:'side', genre:genreClicked}});
+    {queryParams: {genre}});
   }
 
+  rateMovie(value) {
+    this.displayrating = !this.displayrating;
+  }
+
+  lightboxClose(){
+    this.displayrating = null;
+  }
 }

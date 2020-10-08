@@ -1,123 +1,123 @@
 .header {
-  width: 100%;
-  background: #701a28;
-  color: white;
-  font-weight: bold;
-  height: 65px;
+	width: 100%;
+	background: #701a28;
+	color: white;
+	font-weight: bold;
+	height: 65px;
 
+	.website_name {
+		float: left;
+		width: 200px;
+		height: 60px;
+		font-size: 20px;
+		padding-right: 30px;
+		padding-left: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Maax";
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
 
-  .website_name {
-      float: left;
-      width: 200px;
-      height: 60px;
-      font-size: 20px;
-      padding-right: 30px;
-      padding-left: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family:"Maax";
-      letter-spacing: 1px;
+	.settings_options {
+		float: right;
+		padding: 10px 20px 0px 0px;
+		position: relative;
+		top: 7px;
+		user-select: none;
 
-  }
+		.settings_button {
+			color: #031d33;
+		}
 
-  .settings_options {
-      float: right;
-      padding:10px 20px 0px 0px;
-      position: relative;
-      top:7px;
-      user-select: none;
+		.settings_button:hover {
+			cursor: pointer;
+		}
 
-      .settings_button {
-        color: #031d33;
+		.content {
+			display: none;
+			right: 45px;
+			top: 10px;
+			color: black;
+			border-radius: 5px;
+			position: absolute;
+			background: rgb(148, 78, 78);
+			width: 200px;
+			height: 120px;
+			font-size: 15px;
+			font-family: "Maax";
+			text-align: justify;
+			padding: 12px 16px 20px 16px;
+			z-index: 1;
 
-      }
+			&.selected {
+				display: block;
+			}
 
-      .settings_button:hover {
-          cursor: pointer;
-      }
+			h3:hover {
+				color: #031d33;
+				cursor: pointer;
+			}
 
-      .content {
-          display: none;
-          right: 45px;
-          top:10px;
-          color: black;
-          border-radius: 5px;
-          position: absolute;
-          background: rgb(163, 135, 135);
-          width: 190px;
-          height: 120px;
-          font-size: 15px;
-          font-family: "Maax";
-          text-align: justify;
-          padding: 12px 16px 20px 16px;
-          z-index: 1;
+			.signout {
+				outline: none;
+			}
 
-          &.selected {
-              display:block;
-          }
+			.hr_line {
+				border: 1px solid rgb(18, 19, 18);
+			}
 
-          h3:hover {
-            color: #031d33;
-            cursor: pointer;
-          }
+			.translation_en {
+				position: absolute;
+				top: 81px;
+				right: 80px;
+				height: 25px;
+				width: 25px;
+				border: none;
+				background: url(".//..//..//..//assets/pictures/Flag\ of\ United\ Kingdom.png")
+					no-repeat center center;
+				background-size: 20px;
+				background-position-x: 0px;
 
-          .signout{
-            outline: none;
-          }
+				&:focus {
+					outline: none;
+				}
+			}
 
-          .hr_line{
-            border: 1px solid rgb(18, 19, 18);
-          }
+			.translation_fr {
+				position: absolute;
+				top: 81px;
+				right: 60px;
+				height: 25px;
+				width: 25px;
+				border: none;
+				background: url(".//..//..//..//assets/pictures/flag\ of\ france.png")
+					no-repeat center center;
+				background-size: 20px;
+				background-position-x: 5px;
 
-          .translation_en{
-            position: absolute;
-            top: 81px;
-            right: 80px;
-            height: 25px;
-            width: 25px;
-            border: none;
-            background: url(".//..//..//..//assets/pictures/Flag\ of\ United\ Kingdom.png") no-repeat center center;
-            background-size: 20px;
-            background-position-x: 0px;
+				&:focus {
+					outline: none;
+				}
+			}
 
-            &:focus{
-              outline: none;
-            }
+			.translation_sp {
+				position: absolute;
+				top: 81px;
+				right: 35px;
+				height: 25px;
+				width: 25px;
+				border: none;
+				background: url(".//..//..//..//assets/pictures/spain_spanish_national_country_flag-512.png")
+					no-repeat center center;
+				background-size: 20px;
+				background-position-x: 5px;
 
-          }
-
-          .translation_fr{
-            position: absolute;
-            top: 81px;
-            right: 60px;
-            height: 25px;
-            width: 25px;
-            border: none;
-            background: url(".//..//..//..//assets/pictures/flag\ of\ france.png") no-repeat center center;
-            background-size: 20px;
-            background-position-x: 5px;
-
-            &:focus{
-              outline: none;
-            }
-          }
-
-          .translation_sp{
-            position: absolute;
-            top: 81px;
-            right:35px;
-            height: 25px;
-            width: 25px;
-            border: none;
-            background: url(".//..//..//..//assets/pictures/spain_spanish_national_country_flag-512.png") no-repeat center center;
-            background-size: 20px;
-            background-position-x: 5px;
-
-            &:focus{
-              outline: none;
-            }
-          }
-      }
-  }
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
 }

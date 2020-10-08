@@ -15,6 +15,10 @@ import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { RatingComponent } from './components/rating/rating.component';
+import { NgxStarsModule } from 'ngx-stars';
+import { FormsModule } from '@angular/forms';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -31,13 +35,18 @@ export function createTranslateLoader(http: HttpClient) {
     SearchbarComponent,
     ChipComponent,
     MovieDetailsComponent,
-    LoginComponent
+    LoginComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxStarsModule,
+    FormsModule,
+    NgImageSliderModule,
+
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

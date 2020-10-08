@@ -2,8 +2,6 @@
      <!-- display current page -->
     <h1>{{ title | translate }}</h1>
 
-    <div class = "date"> {{ myDate | date:'short' }}</div>
-
     <!-- chips for movie rating -->
     <div class="chips">
         <app-chip text="{{'All' | translate }}" (click)="sortMovies('all')" [selected]="ratingBy === 'all'"></app-chip>
@@ -23,4 +21,5 @@
         [movieId]="item.id" [movieTitle]="item.title" [movieRating]="item.rating"  [movieGenre]="item.genreTotal" [moviePicUrl]="item.posterUrl">
         </app-card>
     </div>
+
 </div>

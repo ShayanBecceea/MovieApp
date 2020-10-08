@@ -22,12 +22,26 @@
             <span class="information">{{'Genres' | translate}}</span>
             <span class="details-content">{{ movieDetails?.genreStr | translate }}</span>
             <span class="information">{{'Release Date' | translate}}</span>
-            <span class="details-content">{{ movieDetails?.releaseDate }}</span>
+            <span class="details-content">{{ movieDetails?.releaseDate | date:'shortDate' }}</span>
           </div>
         </div>
 
-      </div>
-    </div>
-  </div>
+        <!-- Movie rating -->
+        <div class="rating" (click)="rateMovie($event)">
+          <span>{{'Rate Movie' | translate}}</span>
+        </div>
+        <div class="body_container" [class.selected]="displayrating" (click)="rateMovie($event)">
+          <div class="content-container">
+            <div class="content" (click)="$event.stopPropagation()">
+              <app-rating [movieId]="movieDetails?.id"></app-rating>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class = "gallery_title"> {{'Movie Images' | translate}} </div>
+          <div class= "gallery">
+          <ng-image-slider [images]="image" [imageSize]="{width: 'auto', height: 'auto'}" slideImage="1" [infinite]="false" [autoSlide]="1" [animationSpeed]="0.5"></ng-image-slider>
+        </div>
 </div>
 

@@ -8,7 +8,6 @@ export class Movie {
     private _genre: string[];
     private _posterUrl: string;
 
-
     get id(): number {
         return this._id;
     }
